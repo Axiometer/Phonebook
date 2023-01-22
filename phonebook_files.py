@@ -13,6 +13,7 @@ def read_from_csv(filename):
     book = []
     with open(filename, "r") as csvfile:
         reader = csv.DictReader(csvfile, fieldnames=['fullname', 'number', 'comment'])
+        # пропускаем шапку
         next(reader)
         book.extend(reader)
     return book
