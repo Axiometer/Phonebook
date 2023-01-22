@@ -1,6 +1,7 @@
 import csv, os
 import phonebook_files
 import phonebook_view
+import phonebook_controller
 
 # инициализация
 os.system('cls' if os.name == 'nt' else 'clear')
@@ -25,7 +26,7 @@ def main():
         """)
         action = input("Выберите действие: ")
         if action.upper() == "A":
-            #phonebook_controller.add_contact()
+            phonebook_controller.add_contact(phonebook)
             print("Добавление контакта...")
         elif action.upper() == "L":
             phonebook_view.list_contacts(phonebook)
@@ -34,11 +35,11 @@ def main():
             phonebook_view.search_contact(phonebook,keyword)
         elif action.upper() == "U":
             keyword = input("Введите имя контакта для изменения: ")
-            #phonebook_controller.update_contact()
+            phonebook_controller.update_contact()
             print("Обновление контакта...")
         elif action.upper() == "R":
             keyword = input("Введите имя контакта для удаления: ")
-            #phonebook_controller.remove_item()
+            phonebook_controller.remove_contact()
             print("Удаление контакта...")
         elif action.upper() == "E":
             phonebook_files.write_to_csv(phonebook, filename)
