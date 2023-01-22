@@ -1,4 +1,5 @@
 import csv, os
+import logging
 import phonebook_files
 import phonebook_view
 import phonebook_controller
@@ -7,6 +8,9 @@ import phonebook_controller
 os.system('cls' if os.name == 'nt' else 'clear')
 filename = "phonebook.csv"
 print("-------------------Телефонный справочник------------------")
+logging.basicConfig(level=logging.DEBUG, filename="log.log")
+logger = logging.getLogger(__name__)
+logger.info(__file__ + " is starting up")
 
 def main():
     # читаем файл CSV и кладем в переменную список словарей
@@ -46,6 +50,7 @@ def main():
             break
         else:
              print("\nНеверное действие")
+
 
 if __name__ == "__main__":
     main()
