@@ -2,15 +2,16 @@ import csv, os
 import phonebook_files
 import phonebook_view
 
+# инициализация
 os.system('cls' if os.name == 'nt' else 'clear')
 filename = "phonebook.csv"
 print("-------------------Телефонный справочник------------------")
 
 def main():
-    #global phonebook
-    #global filename
+    # читаем файл CSV и кладем в переменную список словарей
     phonebook = phonebook_files.read_from_csv(filename)
 
+    # выводим меню
     while True:
         print("""
         Выберите действие:
