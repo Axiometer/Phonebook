@@ -1,0 +1,39 @@
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\main.py starting up...
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\phonebook_files.py Считан файл phonebook.csv
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\main.py main CSV file read
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\phonebook_view.py Вывод контактов...
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\main.py Выведен список контактов
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\phonebook_controller.py Добавлен контакт: Ferrea Muoni 23523236263 dsgghhhh
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\main.py Добавление контакта выполнено
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\phonebook_view.py Вывод контактов...
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\main.py Выведен список контактов
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\phonebook_view.py Поиск контактов...
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\main.py Выполнен поиск контактов
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\phonebook_controller.py 
+Обновлена запись => ФИО: Ferrea Moani | Телефон: 23542363463 | Комментарий: dsgsdghasdf | Index: 8
+
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\main.py Обновление контакта выполнено...
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\phonebook_view.py Вывод контактов...
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\main.py Выведен список контактов
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\phonebook_controller.py Добавлен контакт: BBBBBbbb AaaaAaa 32545435554 fbgdfg
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\main.py Добавление контакта выполнено
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\phonebook_view.py Вывод контактов...
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\main.py Выведен список контактов
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\phonebook_controller.py Удалена запись => ФИО: BBBBBbbb AaaaAaa | Телефон: 32545435554 | Комментарий: fbgdfg | Index: 9
+
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\main.py Удаление контакта выполнено...
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\phonebook_view.py Вывод контактов...
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\main.py Выведен список контактов
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\phonebook_files.py Имортирован файл phonebook2.csv
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\main.py Импортирован CSV файл. Слияние
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\phonebook_view.py Вывод контактов...
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\main.py Выведен список контактов
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\phonebook_files.py Считан файл test.txt
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\main.py Импортирован TXT файл. Слияние
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\phonebook_view.py Вывод контактов...
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\main.py Выведен список контактов
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\phonebook_files.py Записан файл phonebook3.csv
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\phonebook_files.py Экспортирован файл phonebook3.csv
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\main.py Экспортирован файл в CSV формате
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\phonebook_files.py Записан файл phonebook.csv
+INFO:phonebook_logger:d:\GB\Python-Seminar7\Phonebook\main.py Выход из программы
