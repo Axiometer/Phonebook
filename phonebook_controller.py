@@ -1,9 +1,12 @@
+import phonebook_logger
+
 def add_item(phonebook, *, name, number, comment):
     bookitem = {"fullname": "", "number": "", "comment": ""}
     bookitem["fullname"] = name
     bookitem["number"] = number
     bookitem['comment'] = comment
     phonebook.append(bookitem)
+    phonebook_logger.log(__file__, "Добавлен контакт: " + name + " " + number + " " + comment)
 
 def update_contact(phonebook, keyword):
     items =[]
@@ -29,6 +32,7 @@ def update_contact(phonebook, keyword):
                 phonebook.insert(index, index_item)
                 break
             print(f"\nОбновлена запись => ФИО: {name} | Телефон: {number} | Комментарий: {comment} | Index: {index}\n")
+            phonebook_logger.log(__file__, f'\nОбновлена запись => ФИО: {name} | Телефон: {number} | Комментарий: {comment} | Index: {index}\n')
     print("-"*60)
 
 def remove_contact(phonebook, keyword):
@@ -41,13 +45,14 @@ def remove_contact(phonebook, keyword):
             else:
                 phonebook.pop(index)
                 print("\nЗапись удалена.")
-            
+                phonebook_logger.log(__file__, f'Удалена запись => ФИО: {item["fullname"]} | Телефон: {item["number"]} | Комментарий: {item["comment"]} | Index: {index}\n')
     print("-"*60)   
 
 def is_duplicate_number(phonebook, ph_number):
     for index, item in enumerate(phonebook):
         if ph_number in item["number"]:
             print("Этот телефон уже есть в справочнике.")
+            phonebook_logger.log(__file__, "Попытка добавить дублирующую запись")
             return True        
 
 def add_action(phonebook):

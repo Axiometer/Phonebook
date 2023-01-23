@@ -1,5 +1,8 @@
+import phonebook_logger
+
 # функция поиска паттерна в контакте
 def search_contact(phonebook, keyword):
+    phonebook_logger.log(__file__, "Поиск контактов...")
     # нумеруем список словарей
     for index, item in enumerate(phonebook):
         # в каждом словаре ищем keyword в поле fullname
@@ -9,6 +12,7 @@ def search_contact(phonebook, keyword):
 
 # функция вывода списка контактов
 def list_contacts(book):
+    phonebook_logger.log(__file__, "Вывод контактов...")
     # шапка
     print("-"*60)
     print("ФИО\t\t|\tТелефон\t\t|\tКомментарий", end="\n")
